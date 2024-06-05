@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import logo from "../assets/Logo.jpeg";
+import logo from "../../assets/Logo.jpeg";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,18 +47,18 @@ function Navbar() {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden fixed top-20 left-0 w-full bg-[#fff] z-10 flex flex-col items-center space-y-6 py-6">
-          <div className="cursor-pointer hover:text-[#d8c7a1]">
+        <div className="md:hidden fixed top-20 left-0 w-full bg-white/60 ... z-10 flex flex-col items-center space-y-6 py-6">
+          <div className="cursor-pointer text-black font-semibold hover:text-[#d8c7a1]">
             <Link to="/" onClick={toggleMenu}>
               Home
             </Link>
           </div>
-          <div className="cursor-pointer hover:text-[#d8c7a1]">
+          <div className="cursor-pointer text-black font-semibold hover:text-[#d8c7a1]">
             <Link to="/shop" onClick={toggleMenu}>
               Shop
             </Link>
           </div>
-          <div className="cursor-pointer hover:text-[#d8c7a1]">
+          <div className="cursor-pointer text-black font-semibold hover:text-[#d8c7a1]">
             <Link to="/ContactUs" onClick={toggleMenu}>
               Contact Us
             </Link>

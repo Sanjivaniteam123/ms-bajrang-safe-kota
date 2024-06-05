@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import Popup from "reactjs-popup";
-import "reactjs-popup/dist/index.css";
+// import "reactjs-popup/dist/index.css";
 import { RxCrossCircled } from "react-icons/rx";
 
 const Shop = () => {
@@ -101,38 +101,38 @@ const Shop = () => {
   };
 
   return (
-    <div className="py-24">
-      <div className="grid grid-cols-2 w-full px-4 sm:px-24 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 overflow-auto p-2 gap-4">
+    <div className="py-24 ">
+      <div className=" grid grid-cols-2 w-full px-4 sm:px-20 sm:grid-cols-5 overflow-auto h-full gap-3 ">
         {images.map((item, index) => (
           <Popup
             trigger={
               <div
                 key={index}
-                className="h-52 w-full sm:h-72 sm:w-56 border border-[#d8c7a1] shadow-xl hover:border-[#d8c7a1] hover:border-2"
+                className=" w-full h-[100%]  sm:w-[90%] border border-[#d8c7a1] shadow-xl hover:border-[#d8c7a1] border-transparent border-2"
               >
-                <div className="p-2">
+                <div className="p-1 h-32 sm:h-44">
                   <img
                     src={item.img}
                     alt={item.itemName}
-                    className="w-full rounded-xl object-contain h-24 sm:h-40 p-4 hover:p-0"
+                    className="rounded-xl object-contain h-full w-full p-1"
                   />
                 </div>
-                <div className="bg-[#d9c393] h-16 sm:h-20 py-1 sm:py-2">
+                <div className="bg-[#d9c393] h-[26%] sm:h-[26%] py-1 sm:py-2 ">
                   <p className="text-xs sm:text-sm font-bold text-center">
                     {item.itemName}
                   </p>
-                  <p className="text-sm text-center">
+                  <p className="text-xs sm:text-sm text-center">
                     <span>Offer Price : </span>
                     <span>₹{item.price}</span>
                   </p>
-                  <p className="text-sm text-center">
+                  <p className="text-xs sm:text-sm text-center">
                     <span>Actual Price : ₹</span>
                     <span>{item.price}</span>
                   </p>
                 </div>
-                <div className="text-center h-7 hover:text-[#d8c7a1] hover:bg-black">
+                <div className="text-center h-[10%] hover:text-[#d8c7a1] hover:bg-black ">
                   <button
-                    className="text-xs sm:text-sm font-semibold"
+                    className="text-xs sm:text-sm font-semibold "
                     onClick={() => handleBuyNow(item)}
                   >
                     Buy Now
@@ -142,34 +142,39 @@ const Shop = () => {
             }
             modal
           >
-            {(close) => (
-              <div className="h-[400px]  sm:h-[600px] m-auto rounded-lg p-2 overflow-auto">
-                <div className="absolute top-3 right-3">
-                  <RxCrossCircled
-                    onClick={close}
-                    className="cursor-pointer text-xl"
-                  />
+            {(close) => {
+              return (
+                <div className="h-[80%] m-auto sm:w-[500px] w-[300px] bg-white relative rounded-lg p-5 overflow-auto border-2">
+                  <div className="absolute top-3 right-3">
+                    <RxCrossCircled
+                      onClick={close}
+                      className="cursor-pointer text-xl"
+                    />
+                  </div>
+                  <div className="h-full">
+                    <img
+                      src={item.img}
+                      className="m-auto h-[300px] w-[300px] border-2 object-contain "
+                    />
+                  </div>
+
+                  <div className="absolute bottom-3 right-3 ">
+                    <button
+                      className="text-xs sm:text-sm font-bold  px-4 py-2 rounded-full hover:bg-[#d8c7a1] hover:text-black text-[#d8c7a1] bg-black"
+                      onClick={() => handleBuyNow(item)}
+                    >
+                      Buy Now
+                    </button>
+                  </div>
+                  <div className="mt-3 w-[70%]">
+                    <div className="font-bold sm:text-lg">{item.itemName}</div>
+                    <div>Actual Price : {item.price}</div>
+                    <div>Offer : {item.price}</div>
+                    <div>Description : {item.des}</div>
+                  </div>
                 </div>
-                <img
-                  src={item.img}
-                  className="h-[200px] sm:h-[550px] m-auto "
-                />
-                <div className="absolute bottom-3 right-3 ">
-                  <button
-                    className="text-xs sm:text-sm font-bold p-1 sm:p-4 rounded-full hover:bg-[#d8c7a1] hover:text-black text-[#d8c7a1] bg-black"
-                    onClick={() => handleBuyNow(item)}
-                  >
-                    Buy Now
-                  </button>
-                </div>
-                <div className="mt-3">
-                  <div className="font-bold sm:text-lg">{item.itemName}</div>
-                  <div>Actual Price : {item.price}</div>
-                  <div>Offer : {item.price}</div>
-                  <div>Description : {item.des}</div>
-                </div>
-              </div>
-            )}
+              );
+            }}
           </Popup>
         ))}
       </div>
