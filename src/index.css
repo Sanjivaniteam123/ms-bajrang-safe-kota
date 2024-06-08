@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(500%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  display: inline-block;
+  animation: marqueeAnimation 15s linear infinite;
+  font-family: "Playfair Display", serif;
+  white-space: nowrap;
+}

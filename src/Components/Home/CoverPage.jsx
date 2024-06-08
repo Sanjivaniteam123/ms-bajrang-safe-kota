@@ -18,8 +18,15 @@ const CoverPage = () => {
   }, []);
 
   return (
-    <div className="pt-24 relative">
-      <div className="w-[95%] m-auto overflow-hidden relative">
+    <div className="pt-20 relative">
+      <div className="overflow-hidden w-full bg-black">
+        <div className="whitespace-nowrap">
+          <span className="marquee text-white text-sm sm:text-lg sm:p-2">
+            Welcome To S/m Bajrang Safe Lock
+          </span>
+        </div>
+      </div>
+      <div className="w-full md:w-[95%] m-auto overflow-hidden relative">
         <div
           className="flex transition-transform duration-1000 ease-in-out"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -33,11 +40,11 @@ const CoverPage = () => {
             />
           ))}
         </div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center  ">
-          <div className="text-xs px-2 sm:text-5xl text-[#d8c7a1] font-bold py-2 sm:py-6 font-serif backdrop-blur-sm bg-black/40 ...">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+          <div className="text-xs px-2 sm:text-5xl text-[#d8c7a1] font-bold py-2 sm:py-6 font-serif backdrop-blur-sm bg-black/40">
             Welcome to Locker Service - Your Ultimate Home Security Solution !
           </div>
-          <div className="  p-1 font-semibold  w-1/3 text-xs sm:w-24 sm:text-base rounded-md text-[#d8c7a1] bg-black mt-4  hover:text-[#f1c668] hover:bg-white">
+          <div className="p-1 font-semibold w-1/3 text-xs sm:w-24 sm:text-base rounded-md text-[#d8c7a1] bg-black mt-4 hover:text-[#f1c668] hover:bg-white">
             <Link to="contactUs">Contact Us</Link>
           </div>
         </div>
@@ -47,36 +54,3 @@ const CoverPage = () => {
 };
 
 export default CoverPage;
-
-{
-  /* <div className=" bg-black flex p-6">
-            <div className="h-96 ">
-              <img
-                src="https://pngimg.com/d/safe_PNG11.png"
-                alt="Img"
-                className="h-full rounded-md pt-6"
-              />
-            </div>
-
-            <div className="py-20 px-16 w-3/4">
-              <div className="text-3xl text-[#c9a872] py-2 font-serif">
-                Welcome to Locker Service - Your Ultimate Home Security
-                Solution!
-              </div>
-              <div className="text-[#c9a872] text-base font-semibold py-8">
-                In a world where peace of mind is priceless, Locker Service
-                brings you the finest range of lockers designed to keep your
-                valuables safe and sound. Whether it is important documents,
-                precious jewelry, or cherished mementos, our state-of-the-art
-                lockers provide the ultimate protection for everything you hold
-                dear. With advanced security features, easy accessibility, and a
-                commitment to safeguarding your possessions, Locker Service
-                ensures that you can rest easy knowing your most treasured items
-                are in good hands.
-              </div>
-              <div className="bg-white p-2 font-semibold text-[#026679] w-24 rounded-md ">
-                <Link to="contactUs">Contact Us</Link>
-              </div>
-            </div>
-          </div> */
-}

@@ -47,7 +47,7 @@ function Navbar() {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden fixed top-20 left-0 w-full bg-white/60 ... z-10 flex flex-col items-center space-y-6 py-6">
+        <div className="md:hidden fixed top-20 left-0 w-full bg-white/80 ... z-10 flex flex-col items-center space-y-6 py-6">
           <div className="cursor-pointer text-black font-semibold hover:text-[#d8c7a1]">
             <Link to="/" onClick={toggleMenu}>
               Home
