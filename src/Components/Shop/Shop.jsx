@@ -91,7 +91,7 @@ const Shop = () => {
   ];
 
   const handleBuyNow = (item) => {
-    const adminPhoneNumber = "+917999886244";
+    const adminPhoneNumber = "+919981733559";
     const whatsappMessage = `${item.img}`;
     const whatsappLink = `https://wa.me/${adminPhoneNumber}?text=${encodeURIComponent(
       whatsappMessage

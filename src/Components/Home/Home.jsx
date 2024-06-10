@@ -8,7 +8,7 @@ const Home = () => {
       <CoverPage />
       <div className="w-full md:w-[93%] m-auto flex flex-col  md:flex-row px-10 py-3 md:py-10 md:px-20 border-[#cfa446]  border-2 mt-4 md:mt-14 rounded-xl shadow-lg ">
         <div className="w-full sm:w-[30%] h-full  ">
-          <img src={AboutLogo} className="bg-contain h-full  rounded-3xl " />
+          <img src={AboutLogo} className="bg-contain h-full rounded-3xl " />
         </div>
         <div className="w-full md:w-[70%] flex items-center px-3 text-sm md:text-lg md:px-20 ">
           <div>
@@ -23,7 +23,7 @@ const Home = () => {
             </p>
 
             <p className="md:mt-4 px-1 md:px-10 text-center text-sm">
-              M/s Bajrang Safe Kota has become an expert in the manufacturing of
+              S/m Bajrang Safe Kota has become an expert in the manufacturing of
               safes and lockers. Our products are made from the highest quality
               materials and undergo rigorous testing procedures. Our aim is to
               provide our customers with the best security solutions, ensuring

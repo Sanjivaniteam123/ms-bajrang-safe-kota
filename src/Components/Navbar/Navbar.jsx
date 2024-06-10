@@ -22,7 +22,7 @@ function Navbar() {
             />
           </Link>
           <div className="pt-7 sm:pt-5 pl-2 sm:pl-4 font-serif text-xs sm:text-xl font-bold text-white ">
-            M/s Bajrang Safe Kota
+            S/m Bajrang Safe Kota
           </div>
         </div>
         <div className="hidden md:flex py-6 text-base font-semibold space-x-6">

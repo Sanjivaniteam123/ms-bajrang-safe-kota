@@ -12,21 +12,21 @@ const Variety = () => {
       dir: "right",
       heading: "Jewellery Safe",
       des: "Ideal for protecting jewelry and precious metals Features anti-burglar and anti-drill protections Customizable interior options Made from premium quality materials",
-      img: "https://sanushaa.in/wp-content/uploads/2019/10/godrej-nx-15-litres-digital-electronic-safe-locker-ebony_4.jpg",
+      img: "https://image.made-in-china.com/202f0j00heHUoVnCSjqy/2020-Big-Digital-Safe-Deposit-Locker-for-Home-Online-Wholesale-1300mm-High.jpg",
     },
     {
       id: 3,
       dir: "left",
-      heading: "Fireproof Safes",
+      heading: "Fireproof Safe",
       des: "Ideal for protecting jewelry and precious metals Features anti-burglar and anti-drill protections Customizable interior options Made from premium quality materials",
-      img: "https://image.made-in-china.com/202f0j00heHUoVnCSjqy/2020-Big-Digital-Safe-Deposit-Locker-for-Home-Online-Wholesale-1300mm-High.jpg",
+      img: "https://sanushaa.in/wp-content/uploads/2019/10/godrej-nx-15-litres-digital-electronic-safe-locker-ebony_4.jpg",
     },
     {
       id: 4,
       dir: "right",
       heading: "Safe Cupboards",
       des: "Ideal for protecting jewelry and precious metals Features anti-burglar and anti-drill protections Customizable interior options Made from premium quality materials",
-      img: "https://5.imimg.com/data5/SELLER/Default/2021/8/QT/GX/BG/15032120/godrej-matrix-electronic-safe-250x250.jpg",
+      img: "https://mm.media-mccoymart.com/buy_catalog/image/catalog/products/2020/06/bio1a.webp",
     },
   ];
   return (
