@@ -9,10 +9,10 @@ import { MdOutlinePhone } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className=" bg-black/60 ... py-3 mt-4">
+    <footer className=" bg-black/60 ... md:py-5 py-3 mt-4">
       <div className="flex flex-col mx-auto px-4 md:px-10 ">
         <div className="flex flex-col md:flex-row">
-          <div className=" md:w-[10%] w-[20%] mx-auto md:mx-0 ">
+          <div className=" md:w-[7%] w-[20%] mx-auto md:mx-0 ">
             <img src={logo} alt="Company Logo" className="  rounded-full " />
           </div>
           <div className="flex flex-col md:flex-row items-center gap-3 mt-2 ">
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-center text-white text-xs md:text-base pt-2">
+        <div className="text-center text-white text-xs md:text-base pt-4">
           {/* Copy right Text */}
           <Link to={"https://sanjivani.vercel.app/"}>
             ©2024 Sanjivani Techno IT Solutions. All rights reserved.|
