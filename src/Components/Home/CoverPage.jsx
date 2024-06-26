@@ -22,7 +22,7 @@ const CoverPage = () => {
       <div className="overflow-hidden w-full bg-black">
         <div className="whitespace-nowrap">
           <span className="marquee text-white text-sm sm:text-lg sm:p-2">
-            Welcome To S/m Bajrang Safe Lock
+            Welcome To M/s Bajrang Safe Lock
           </span>
         </div>
       </div>

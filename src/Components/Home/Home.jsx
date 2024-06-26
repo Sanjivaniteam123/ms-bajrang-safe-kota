@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <>
       <CoverPage />
-      <div className="w-full md:w-[93%] m-auto flex flex-col  md:flex-row px-10 py-3 md:py-10 md:px-20 border-[#cfa446]  border-2 mt-4 md:mt-14 rounded-xl shadow-lg ">
-        <div className="w-full sm:w-[30%] h-full  ">
+      <div className="w-full md:w-[93%] m-auto flex flex-col  md:flex-row px-3 py-6 md:py-10 md:px-20 md:border-[#cfa446]  md:border-2 mt-4 md:mt-14 rounded-xl md:shadow-lg ">
+        <div className="w-[60%] m-auto sm:w-[30%] h-full  ">
           <img src={AboutLogo} className="bg-contain h-full rounded-3xl " />
         </div>
         <div className="w-full md:w-[70%] flex items-center px-3 text-sm md:text-lg md:px-20 ">
@@ -22,8 +22,8 @@ const Home = () => {
               About Us
             </p>
 
-            <p className="md:mt-4 px-1 md:px-10 text-center text-sm">
-              S/m Bajrang Safe Kota has become an expert in the manufacturing of
+            <p className="mt-3 md:mt-4 px-1 md:px-10 text-center text-sm">
+              M/s Bajrang Safe Kota has become an expert in the manufacturing of
               safes and lockers. Our products are made from the highest quality
               materials and undergo rigorous testing procedures. Our aim is to
               provide our customers with the best security solutions, ensuring
@@ -40,7 +40,7 @@ const Home = () => {
           height="400"
           loading="lazy"
           allowFullScreen
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.246781385768!2d3.383378914263237!3d6.52437919530964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8e25843232a5%3A0x3e91406dbf77ef4e!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1623156721243!5m2!1sen!2sfr"
+          src="https://www.google.com/maps/embed?pb=!4v1718625671220!6m8!1m7!1sE7JYnD_qOfJtHRrmlrAsyw!2m2!1d25.11569671318874!2d75.86675444747145!3f240.17949832775918!4f-19.786454849498327!5f0.4000000000000002"
         ></iframe>
       </div>
     </>

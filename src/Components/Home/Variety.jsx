@@ -18,24 +18,24 @@ const Variety = () => {
       id: 3,
       dir: "left",
       heading: "Fireproof Safe",
-      des: "Ideal for protecting jewelry and precious metals Features anti-burglar and anti-drill protections Customizable interior options Made from premium quality materials",
+      des: "The advanced fire-resistant technology protects important documents with multiple locking systems and extreme temperature resistance, ensuring security and preservation.",
       img: "https://sanushaa.in/wp-content/uploads/2019/10/godrej-nx-15-litres-digital-electronic-safe-locker-ebony_4.jpg",
     },
     {
       id: 4,
       dir: "right",
       heading: "Safe Cupboards",
-      des: "Ideal for protecting jewelry and precious metals Features anti-burglar and anti-drill protections Customizable interior options Made from premium quality materials",
+      des: "This combination of security and storage is available in modern and classic designs, made from high-quality materials, and is easy to use and secure.",
       img: "https://mm.media-mccoymart.com/buy_catalog/image/catalog/products/2020/06/bio1a.webp",
     },
   ];
   return (
     <>
       <div className="w-full mt-6 sm:mt-12 md:px-10 mb-6 ">
-        <div className="text-lg sm:text-4xl text-center font-serif font-bold text-[#cfa446] ">
+        <div className="text-lg sm:text-4xl text-center font-serif font-bold text-[#f4d081] md:text-[#cfa446] bg-black md:bg-white py-1 md:py-0">
           Our Products
         </div>
-        <div className="flex flex-col  sm:px-4 gap-3 mt-4 sm:mt-10   ">
+        <div className="flex flex-col  sm:px-4 gap-3  sm:mt-10   ">
           {product.map((item, index) => (
             <div
               key={index}

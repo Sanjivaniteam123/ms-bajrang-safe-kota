@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/Logo.jpeg";
 import { FaInstagram } from "react-icons/fa";
-import { FiFacebook } from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { CgMail } from "react-icons/cg";
 import { MdOutlinePhone } from "react-icons/md";
+import { FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -18,17 +19,28 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center gap-3 mt-2 ">
             <div className="flex flex-col">
               <div className=" pl-2 sm:pl-4 font-serif text-xs sm:text-xl font-bold text-white ">
-                S/m Bajrang Safe Kota
+                M/s Bajrang Safe Kota
               </div>
-              <div className="flex flex-row pl-2 sm:pl-4 gap-2 pt-4 m-auto">
-                <div className="bg-white p-2 rounded-full hover:bg-black hover:text-white">
-                  <FaInstagram />
+              <div className="flex flex-row pl-2 sm:pl-4 gap-2 pt-4 ">
+                <div className="bg-white cursor-pointer p-2 rounded-full hover:bg-black hover:text-white">
+                  <a href="https://www.instagram.com/msbajrangsafekota?igsh=MXg0NWpoYW5nbW41Nw==">
+                    <FaInstagram />
+                  </a>
                 </div>
-                <div className="bg-white p-2 rounded-full hover:bg-black hover:text-white">
-                  <FiFacebook />
+                <div className="bg-white cursor-pointer p-2 rounded-full hover:bg-black hover:text-white">
+                  <a href="https://www.facebook.com/profile.php?id=61559407207153&mibextid=ZbWKwL">
+                    <FaFacebookF />
+                  </a>
                 </div>
-                <div className="bg-white p-2 rounded-full hover:bg-black hover:text-white">
-                  <FaWhatsapp />
+                <div className="bg-white cursor-pointer p-2 rounded-full hover:bg-black hover:text-white">
+                  <a href="https://www.linkedin.com/company/ms-bajrang-safe-kota/?viewAsMember=true">
+                    <FaLinkedinIn />
+                  </a>
+                </div>
+                <div className="bg-white cursor-pointer p-2 rounded-full hover:bg-black hover:text-white">
+                  <a>
+                    <FaTwitter />
+                  </a>
                 </div>
               </div>
             </div>
@@ -43,7 +55,7 @@ const Footer = () => {
               </div>
               <div className="flex gap-2">
                 <CgMail className="text-2xl" />
-                <p className="text-xs md:text-base">bajrangsafe@gmail.com</p>
+                <p className="text-xs md:text-base">dayamkamal18@gmail.com</p>
               </div>
               <div className="flex gap-2">
                 <MdOutlinePhone className="text-2xl" />
@@ -54,15 +66,12 @@ const Footer = () => {
         </div>
 
         <div className="text-center text-white text-xs md:text-base pt-4">
-          {/* Copy right Text */}
           <Link to={"https://sanjivani.vercel.app/"}>
             ©2024 Sanjivani Techno IT Solutions. All rights reserved.|
             <span className="underline underline-offset-1">Privacy Policy</span>
           </Link>
         </div>
-        {/* Lower Part End */}
       </div>
-      {/* Container End */}
     </footer>
   );
 };
