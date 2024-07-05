@@ -163,7 +163,7 @@ const Shop = () => {
                 </p>
                 <p className="text-xs sm:text-sm text-center">
                   <span>Offer Price: </span>
-                  <span>₹{item.price}</span>
+                  <span>₹{item.offer}</span>
                 </p>
                 <p className="text-xs sm:text-sm text-center">
                   <span>Actual Price: ₹</span>
